@@ -1,0 +1,25 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2B2730;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB84C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Main title -->
+  <text x="600" y="280" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">InvestEdu</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="340" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle">Investor Education Platform</text>
+  
+  <!-- Accent circle -->
+  <circle cx="1000" cy="150" r="40" fill="#FFB84C"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="200" cy="480" r="30" fill="white" opacity="0.1"/>
+  <circle cx="1000" cy="480" r="20" fill="white" opacity="0.1"/>
+</svg>

@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Yadora from "../../../assets/logo.svg";
+import hamburger from "../../../assets/hamburger.svg";
 import { links } from "../../../utils/constants";
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaTimes } from 'react-icons/fa';
 
 function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,7 +33,7 @@ function Navigation() {
           <img
             src={Yadora}
             alt="InvestEdu logo"
-            className="inline-block mr-8 h-7"
+            className="inline-block mr-8 h-8 sm:h-9 md:h-10 lg:h-11 xl:h-12"
           />
         </Link>
 
@@ -87,7 +88,11 @@ function Navigation() {
         {isMobileMenuOpen ? (
           <FaTimes className="w-6 h-6" />
         ) : (
-          <FaBars className="w-6 h-6" />
+          <img
+            src={hamburger}
+            alt="Hamburger menu icon"
+            className="w-6 h-6 transition-all duration-200 hover:-rotate-90"
+          />
         )}
       </button>
 
