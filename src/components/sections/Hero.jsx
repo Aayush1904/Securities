@@ -39,21 +39,7 @@ function Hero() {
         </figure>
       </div>
       
-      {/* Additional visual elements for Indian market context */}
-      <div className="mt-16 hidden lg:flex justify-center items-center gap-8">
-        <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4">
-          <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-          <span className="text-white font-medium">NSE Live Data</span>
-        </div>
-        <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4">
-          <div className="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></div>
-          <span className="text-white font-medium">BSE Integration</span>
-        </div>
-        <div className="flex items-center gap-4 bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4">
-          <div className="w-3 h-3 bg-accent-500 rounded-full animate-pulse"></div>
-          <span className="text-white font-medium">SEBI Compliant</span>
-        </div>
-      </div>
+
     </section>
   );
 }
