@@ -1,16 +1,27 @@
 import { reviewImgs } from "../../utils/constants";
+import TrueFocus from "../UI/TrueFocus";
 
 function Hero() {
   return (
     <section className="pt-24 md:pt-28 sm:pb-8 md:pb-16">
       <div className="flex flex-nowrap justify-between md:gap-x-24 lg:gap-x-14">
         <div className="max-w-[50rem]">
-          <h1 className="mb-16 sm:mb-4 font-bold text-3xl text-primary-500 sm:text-4xl md:text-5xl/[3.5rem] lg:text-6xl/[4rem] xl:text-7xl/[5rem] tracking-tight">
-            Master the Indian stock market with{" "}
-            <span className="bg-clip-text bg-gradient-to-t from-accent-500 to-accent-200 text-transparent">
-              interactive learning
-            </span>
-          </h1>
+          <div className="mb-16 sm:mb-4">
+            <h1 className="font-bold text-3xl text-primary-500 sm:text-4xl md:text-5xl/[3.5rem] lg:text-6xl/[4rem] xl:text-7xl/[5rem] tracking-tight mb-4">
+              Master the Indian stock market with
+            </h1>
+            <div className="flex justify-start">
+              <TrueFocus 
+                sentence="interactive learning"
+                manualMode={false}
+                blurAmount={3}
+                borderColor="#FFB84C"
+                glowColor="rgba(255, 184, 76, 0.6)"
+                animationDuration={2}
+                pauseBetweenAnimations={1}
+              />
+            </div>
+          </div>
           <div className="flex sm:flex-row flex-col items-start sm:items-center gap-4">
             <ul className="flex">
               {reviewImgs.map((headshot) => (
